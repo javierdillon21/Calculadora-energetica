@@ -128,7 +128,10 @@ export default function Calculadora() {
           <div className="flex flex-col justify-between">
             {selected.map((d, i) => {
               return (
-                <span className="flex gap-2 px-1 text-sm">
+                <span
+                  key={`Seleccionado-${d.nombre}-${d.horas_uso}`}
+                  className="flex gap-2 px-1 text-sm"
+                >
                   <p className="flex w-1/4 justify-center">{d.nombre}</p>
                   <p className="flex w-1/4 justify-center">
                     {d.consumo_nominal}
@@ -171,7 +174,7 @@ export default function Calculadora() {
         {domesticos.map((d, i) => {
           return (
             <div
-              id={`domestico-${i}`}
+              key={`domestico-${i}`}
               className="flex flex-row border-2 h-28 rounded-br-lg overflow-hidden"
               onClick={() => {
                 setIsSelected(true);
