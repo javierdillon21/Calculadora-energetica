@@ -183,7 +183,7 @@ export default function Calculadora() {
             >
               <span className="flex flex-col bg-gray-400">
                 <Image
-                  src="/images/default.jpg"
+                  src={`/images/${d.nombre}.jpg`|| "/images/default.jpg"}
                   width={640}
                   height={640}
                   objectFit="cover"
