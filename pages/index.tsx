@@ -34,7 +34,7 @@ export default function Calculadora() {
   return (
     <div
       id="main"
-      className="flex flex-col min-h-screen w-screen pt-10 gap-4 items-center"
+      className="flex flex-col min-h-screen w-screen pt-10 gap-4 md:px-10 items-center"
     >
       <section
         id="head"
@@ -110,9 +110,9 @@ export default function Calculadora() {
       </section>
       <section
         id="selected"
-        className="flex flex-col flex-grow w-11/12 border gap-y-2"
+        className="flex flex-col flex-grow w-11/12 md:w-1/2 md:my-5 border md:mx-10 gap-y-2"
       >
-        <span className="flex gap-2 px-1 text-xs h-10 border-b justify-center items-center text-center font-bold">
+        <span className="flex gap-2 px-1 text-xs md:text-base h-10 border-b justify-center items-center text-center font-bold">
           <p className="flex w-1/4 justify-center">Artículo</p>
           <p className="flex w-1/4 justify-center">Consumo nominal -W-</p>
           <p className="flex w-1/4 justify-center">Consumo diario -h-</p>
@@ -167,15 +167,18 @@ export default function Calculadora() {
         )}
       </section>
 
-      <p className="flex text-start font-bold text-base">
+      <p className="flex text-start font-bold text-base md:w-1/2 md:self-start md:mx-10">
         LISTA DE ELECTRODOMÉSTICOS
       </p>
-      <section id="appliances" className="grid grid-cols-2 gap-2 w-11/12">
+      <section
+        id="appliances"
+        className="grid grid-cols-2 md:grid-cols-5 gap-2 w-11/12 md:w-1/2 md:self-start mx-10"
+      >
         {domesticos.map((d, i) => {
           return (
             <div
               key={`domestico-${i}`}
-              className="flex flex-row border-2 h-28 rounded-br-lg overflow-hidden"
+              className="flex flex-row border-2 h-28 md:h-40 rounded-br-lg overflow-hidden"
               onClick={() => {
                 setIsSelected(true);
                 setCurrent(d);
