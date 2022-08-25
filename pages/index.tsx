@@ -141,7 +141,7 @@ export default function Calculadora() {
                     $
                     {Number(
                       (
-                        (d.consumo_nominal / 1000) *
+                        (d.consumo_nominal/1000) *
                         d.horas_uso *
                         30 *
                         precioKwh
