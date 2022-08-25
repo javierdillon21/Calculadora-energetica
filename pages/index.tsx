@@ -61,7 +61,7 @@ export default function Calculadora() {
         id="current"
         className={`${
           isSelected ? "flex" : "hidden"
-        } h-auto w-11/12 border border-slate-400 p-2 gap-2 justify-center`}
+        } h-auto w-11/12 md:w-1/3 md:self-start md:mx-10 border border-slate-400 p-2 gap-2 justify-center`}
       >
         <div>
           <p className="text-base mb-1 border-b border-slate-400 font-bold">
@@ -110,7 +110,7 @@ export default function Calculadora() {
       </section>
       <section
         id="selected"
-        className="flex flex-col flex-grow w-11/12 md:w-1/2 md:my-5 border md:mx-10 gap-y-2"
+        className="flex flex-col flex-grow w-11/12 md:w-1/2 md:my-5 border md:self-start md:mx-10 gap-y-2"
       >
         <span className="flex gap-2 px-1 text-xs md:text-base h-10 border-b justify-center items-center text-center font-bold">
           <p className="flex w-1/4 justify-center">Artículo</p>
@@ -186,7 +186,7 @@ export default function Calculadora() {
             >
               <span className="flex flex-col bg-gray-400">
                 <Image
-                  src={`/images/${d.nombre}.jpg`|| "/images/default.jpg"}
+                  src={`/images/${d.nombre}.jpg` || "/images/default.jpg"}
                   width={640}
                   height={640}
                   objectFit="cover"
