@@ -43,13 +43,13 @@ export default function Calculadora() {
         <p className="text-2xl font-bold text-center mb-4">
           Calculadora de consumo energético
         </p>
-        <p className="text-lg font-medium">Cómo funciona?</p>
+        <p className="text-lg font-medium">¿Cómo funciona?</p>
         <p>1. Seleccione un electrodoméstico a la vez con un click.</p>
         <p>2. Ingrese las hora de uso por día.</p>
         <p>3. Agregue el electrodoméstico seleccionado con |+|.</p>
         <p>
           4. Automáticamente se empezará a calcular el valor total mensual a
-          pagar
+          pagar.
         </p>
         <p>5. Pulse |Limpiar| para empezar un nuevo cálculo.</p>
         <p className="font-semibold text-xs mt-4">
