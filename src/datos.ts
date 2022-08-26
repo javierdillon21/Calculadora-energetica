@@ -39,4 +39,5 @@ export const domesticos:Domestico[]=[
 {nombre:"Plancha", consumo_nominal:1200, horas_uso:0},
 {nombre:"Secadora de pelo", consumo_nominal:1500, horas_uso:0},
 {nombre:"Aspiradora", consumo_nominal:1100, horas_uso:0},
+{nombre: "Foco", consumo_nominal: 60, horas_uso:0},
 ]

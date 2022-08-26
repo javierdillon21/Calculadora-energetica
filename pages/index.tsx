@@ -8,7 +8,7 @@ import React, {
 import { domesticos } from "../src/datos";
 import Image from "next/image";
 import { useFieldArray, useForm } from "react-hook-form";
-import Consumo from "../components/consumo";
+
 
 export default function Calculadora() {
   const [selected, setSelected] = useState<Domestico[]>([]);
